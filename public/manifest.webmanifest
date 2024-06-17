@@ -1,0 +1,21 @@
+{
+	"name": "Alex Whitmore Portfolio",
+	"short_name": "Alex_Whitmore_Portfolio",
+	"description": "Experienced DevOps and cloud technologies developer currently working as a Senior Engineer at a Fortune 500 company. Specializing in building infrastructure, managing systems, and release management.",
+	"icons": [
+		{
+			"src": "/192x192.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		},
+		{
+			"src": "/512x512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		}
+	],
+	"start_url": "/",
+	"background_color": "#1d1f21",
+	"theme_color": "#2bbc8a",
+	"display": "standalone"
+}
