@@ -13,10 +13,13 @@ import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
 export default defineConfig({
-	image: {
+	adapter: vercel({
+    webAnalytics: { enabled: true }
+  }),
+  image: {
 		domains: ["webmention.io"],
 	},
-	integrations: [
+  integrations: [
 		expressiveCode(expressiveCodeOptions),
 		icon(),
 		tailwind({
@@ -42,6 +45,7 @@ export default defineConfig({
 			},
 		},
 	},
+	output: 'server',
 	prefetch: true,
 	site: "https://whitmore.io/",
 	vite: {
