@@ -1,27 +1,26 @@
 ---
-import type { SiteMeta } from "@/types";
-import { ViewTransitions } from "astro:transitions";
+import type { SiteMeta } from '@/types'
 
-import BaseHead from "@/components/BaseHead.astro";
-import SkipLink from "@/components/SkipLink.astro";
-import ThemeProvider from "@/components/ThemeProvider.astro";
-import Footer from "@/components/layout/Footer.astro";
-import Header from "@/components/layout/Header.astro";
-import { siteConfig } from "@/site-config";
+import BaseHead from '@/components/BaseHead.astro'
+import SkipLink from '@/components/SkipLink.astro'
+import ThemeProvider from '@/components/ThemeProvider.astro'
+import Footer from '@/components/layout/Footer.astro'
+import Header from '@/components/layout/Header.astro'
+import { siteConfig } from '@/site-config'
 
 interface Props {
-	meta: SiteMeta;
+	meta: SiteMeta
 }
 
 const {
 	meta: { articleDate, description = siteConfig.description, ogImage, title },
-} = Astro.props;
+} = Astro.props
 ---
 
 <html lang={siteConfig.lang}>
 	<head>
 		<BaseHead articleDate={articleDate} description={description} ogImage={ogImage} title={title} />
-		<ViewTransitions />
+		<!-- <ViewTransitions /> -->
 	</head>
 	<body>
 		<ThemeProvider />

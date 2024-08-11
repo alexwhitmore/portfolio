@@ -12,11 +12,7 @@ import remarkUnwrapImages from "remark-unwrap-images";
 import { expressiveCodeOptions } from "./src/site.config";
 import { remarkReadingTime } from "./src/utils/remark-reading-time";
 
-export default defineConfig({
-	adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
-  image: {
+export default defineConfig({e: {
 		domains: ["webmention.io"],
 	},
   integrations: [
@@ -45,7 +41,6 @@ export default defineConfig({
 			},
 		},
 	},
-	output: 'server',
 	prefetch: true,
 	site: "https://whitmore.io/",
 	vite: {
